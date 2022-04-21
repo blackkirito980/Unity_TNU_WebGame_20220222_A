@@ -6,7 +6,7 @@ namespace KID
 {
     public class WeaponSystem : MonoBehaviour
     {
-        [SerializeField, Header("WeaponData")]
+        [SerializeField, Header("武器資料")]
         private DataWeapon dataWeapon;
         private float timer;
 
@@ -21,8 +21,8 @@ namespace KID
         }
         private void Start()
         {
-            Physics2D.IgnoreLayerCollision(3, 6);
-            Physics2D.IgnoreLayerCollision(6, 6);
+            Physics2D.IgnoreLayerCollision(8, 9);
+            Physics2D.IgnoreLayerCollision(9, 9);
 
         }
         private void Update()
